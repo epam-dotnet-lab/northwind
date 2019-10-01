@@ -1,0 +1,39 @@
+{
+    "employees": [
+        {
+            "id" : 1,
+            "LastName" : "Davolio",
+            "FirstName" : "Nancy",
+            "Title" : "Sales Representative",
+            "TitleOfCourtesy" : "Ms.",
+            "BirthDate" : "12/08/1948",
+            "HireDate" : "05/01/1992",
+            "Address" : "507 - 20th Ave. E.Apt. 2A",
+            "City" : "Seattle",
+            "Region" : "WA",
+            "PostalCode" : "98122",
+            "Country" : "USA",
+            "HomePhone" : "(206) 555-9857",
+            "Extension" : "5467",
+            "Photo" : "",
+            "Notes" : "Education includes a BA in psychology from Colorado State University in 1970.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
+            "ReportsTo" : "2",
+            "PhotoPath" : "http://accweb/emmployees/davolio.bmp"
+        }
+    ],
+    "customers": [
+        {
+            "id": "ALFKI",
+            "companyName": "Alfreds Futterkiste",
+            "contactName": "Maria Anders",
+            "contactTitle": "Sales Representative",
+            "address": "Obere Str. 57",
+            "city": "Berlin",
+            "region": null,
+            "postalCode": "12209",
+            "country": "Germany",
+            "phone": "030-0074321",
+            "fax": "030-0076545"
+        }
+    ]
+}
