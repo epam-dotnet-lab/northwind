@@ -52,6 +52,18 @@
       "discontinued": false
     },
     {
+      "productId": 22,
+      "productName": "Gustaf's Knäckebröd",
+      "supplierId": 9,
+      "categoryId": 5,
+      "quantityPerUnit": "24 - 500 g pkgs.",
+      "unitPrice": "21.0000",
+      "unitsInStock": 104,
+      "unitsOnOrder": 0,
+      "reorderLevel": 25,
+      "discontinued": false
+    },
+    {
       "productId": 41,
       "productName": "Jack's New England Clam Chowder",
       "supplierId": 19,
@@ -85,6 +97,18 @@
       "unitsInStock": 20,
       "unitsOnOrder": 0,
       "reorderLevel": 10,
+      "discontinued": false
+    },
+    {
+      "productId": 57,
+      "productName": "Ravioli Angelo",
+      "supplierId": 26,
+      "categoryId": 5,
+      "quantityPerUnit": "24 - 250 g pkgs.",
+      "unitPrice": "19.5000",
+      "unitsInStock": 36,
+      "unitsOnOrder": 0,
+      "reorderLevel": 20,
       "discontinued": false
     },
     {
@@ -137,6 +161,18 @@
       "country": "Germany",
       "phone": "0251-031259",
       "fax": "0251-035695"
+    },
+    {
+      "customerId": "VICTE",
+      "companyName": "Victuailles en stock",
+      "contactName": "Mary Saveley",
+      "contactTitle": "Sales Agent",
+      "address": "2, rue du Commerce",
+      "city": "Lyon",
+      "postalCode": "69004",
+      "country": "France",
+      "phone": "78.32.54.86",
+      "fax": "78.32.54.87"
     },
     {
       "customerId": "VINET",
@@ -197,6 +233,21 @@
       "shipPostalCode": "05454-876",
       "shipCountry": "Brazil",
       "shipRegion": "RJ"
+    },
+    {
+      "orderId": 10251,
+      "customerId": "VICTE",
+      "employeeId": 3,
+      "orderDate": "1996-07-08T00:00:00",
+      "requiredDate": "1996-08-05T00:00:00",
+      "shippedDate": "1996-07-15T00:00:00",
+      "shipVia": 1,
+      "freight": "41.3400",
+      "shipName": "Victuailles en stock",
+      "shipAddress": "2, rue du Commerce",
+      "shipCity": "Lyon",
+      "shipPostalCode": "69004",
+      "shipCountry": "France"
     }
   ],
   "orderDetails": [
@@ -255,6 +306,27 @@
       "unitPrice": "16.8000",
       "quantity": 15,
       "discount": 0.15
+    },
+    {
+      "orderId": 10251,
+      "productId": 22,
+      "unitPrice": "16.8000",
+      "quantity": 6,
+      "discount": 0.05
+    },
+    {
+      "orderId": 10251,
+      "productId": 57,
+      "unitPrice": "15.6000",
+      "quantity": 15,
+      "discount": 0.05
+    },
+    {
+      "orderId": 10251,
+      "productId": 65,
+      "unitPrice": "16.8000",
+      "quantity": 20,
+      "discount": 0
     }
   ]
 }
