@@ -6,10 +6,6 @@
             "description": "Soft drinks, coffees, teas, beers, and ales"
         }
     ],
-    "customers": [],
-    "employees": [],
-    "orderDetails": [],
-    "orders": [],
     "products": [
         {
             "categoryId": 1,
@@ -25,9 +21,5 @@
             "productName": "Chang",
             "quantityPerUnit": "24 - 12 oz bottles"
         }
-    ],
-    "regions": [],
-    "shippers": [],
-    "suppliers": [],
-    "territories": []
+    ]
 }
