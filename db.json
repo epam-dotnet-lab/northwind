@@ -1,1 +1,33 @@
-{"categories":[{"categoryId":1,"categoryName":"Beverages","description":"Soft drinks, coffees, teas, beers, and ales"}],"products":[{"productId":1,"productName":"Chai","supplierId":1,"categoryId":1,"quantityPerUnit":"10 boxes x 20 bags","unitPrice":"18.0000","unitsInStock":39,"unitsOnOrder":0,"reorderLevel":10,"discontinued":false},{"productId":2,"productName":"Chang","supplierId":1,"categoryId":1,"quantityPerUnit":"24 - 12 oz bottles","unitPrice":"19.0000","unitsInStock":17,"unitsOnOrder":40,"reorderLevel":25,"discontinued":false},{"productId":24,"productName":"Guaraná Fantástica","supplierId":10,"categoryId":1,"quantityPerUnit":"12 - 355 ml cans","unitPrice":"4.5000","unitsInStock":20,"unitsOnOrder":0,"reorderLevel":0,"discontinued":true},{"productId":34,"productName":"Sasquatch Ale","supplierId":16,"categoryId":1,"quantityPerUnit":"24 - 12 oz bottles","unitPrice":"14.0000","unitsInStock":111,"unitsOnOrder":0,"reorderLevel":15,"discontinued":false},{"productId":35,"productName":"Steeleye Stout","supplierId":16,"categoryId":1,"quantityPerUnit":"24 - 12 oz bottles","unitPrice":"18.0000","unitsInStock":20,"unitsOnOrder":0,"reorderLevel":15,"discontinued":false},{"productId":38,"productName":"Côte de Blaye","supplierId":18,"categoryId":1,"quantityPerUnit":"12 - 75 cl bottles","unitPrice":"263.5000","unitsInStock":17,"unitsOnOrder":0,"reorderLevel":15,"discontinued":false},{"productId":39,"productName":"Chartreuse verte","supplierId":18,"categoryId":1,"quantityPerUnit":"750 cc per bottle","unitPrice":"18.0000","unitsInStock":69,"unitsOnOrder":0,"reorderLevel":5,"discontinued":false},{"productId":43,"productName":"Ipoh Coffee","supplierId":20,"categoryId":1,"quantityPerUnit":"16 - 500 g tins","unitPrice":"46.0000","unitsInStock":17,"unitsOnOrder":10,"reorderLevel":25,"discontinued":false},{"productId":67,"productName":"Laughing Lumberjack Lager","supplierId":16,"categoryId":1,"quantityPerUnit":"24 - 12 oz bottles","unitPrice":"14.0000","unitsInStock":52,"unitsOnOrder":0,"reorderLevel":10,"discontinued":false},{"productId":70,"productName":"Outback Lager","supplierId":7,"categoryId":1,"quantityPerUnit":"24 - 355 ml bottles","unitPrice":"15.0000","unitsInStock":15,"unitsOnOrder":10,"reorderLevel":30,"discontinued":false},{"productId":75,"productName":"Rhönbräu Klosterbier","supplierId":12,"categoryId":1,"quantityPerUnit":"24 - 0.5 l bottles","unitPrice":"7.7500","unitsInStock":125,"unitsOnOrder":0,"reorderLevel":25,"discontinued":false},{"productId":76,"productName":"Lakkalikööri","supplierId":23,"categoryId":1,"quantityPerUnit":"500 ml","unitPrice":"18.0000","unitsInStock":57,"unitsOnOrder":0,"reorderLevel":20,"discontinued":false}],"customers":[],"employees":[],"orders":[],"orderDetails":[],"regions":[],"shippers":[],"suppliers":[],"territories":[]}
+{
+    "categories": [
+        {
+            "categoryId": 1,
+            "categoryName": "Beverages",
+            "description": "Soft drinks, coffees, teas, beers, and ales"
+        }
+    ],
+    "customers": [],
+    "employees": [],
+    "orderDetails": [],
+    "orders": [],
+    "products": [
+        {
+            "categoryId": 1,
+            "discontinued": false,
+            "productId": 1,
+            "productName": "Chai",
+            "quantityPerUnit": "10 boxes x 20 bags",
+        },
+        {
+            "categoryId": 1,
+            "discontinued": false,
+            "productId": 2,
+            "productName": "Chang",
+            "quantityPerUnit": "24 - 12 oz bottles",
+        }
+    ],
+    "regions": [],
+    "shippers": [],
+    "suppliers": [],
+    "territories": []
+}
