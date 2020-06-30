@@ -5,21 +5,5 @@
             "categoryName": "Beverages",
             "description": "Soft drinks, coffees, teas, beers, and ales"
         }
-    ],
-    "products": [
-        {
-            "categoryId": 1,
-            "discontinued": false,
-            "productId": 1,
-            "productName": "Chai",
-            "quantityPerUnit": "10 boxes x 20 bags"
-        },
-        {
-            "categoryId": 1,
-            "discontinued": false,
-            "productId": 2,
-            "productName": "Chang",
-            "quantityPerUnit": "24 - 12 oz bottles"
-        }
     ]
 }
