@@ -1,18 +1,5 @@
 const axios = require('axios');
 
-const output = {
-    categories: [],
-    products: [],
-    customers: [],
-    employees: [],
-    orders: [],
-    orderDetails: [],
-    regions: [],
-    shippers: [],
-    suppliers: [],
-    territories: [],
-};
-
 const serviceUrl = "https://services.odata.org/V3/Northwind/Northwind.svc/";
 
 (async () => {
@@ -51,17 +38,21 @@ const serviceUrl = "https://services.odata.org/V3/Northwind/Northwind.svc/";
             const supplierEntities = r[8];
             const territoryEntities = r[9];
             
-            output.categories = categoryEntities.map(mapCategory);
-            output.products = productEntities.map(mapProduct);
-            output.customers = customerEntities.map(mapCustomer);
-            output.employees = employeeEntities.map(mapEmployee);
-            output.orders = orderEntities.map(mapOrder);
-            output.orderDetails = orderDetailEntities.map(mapOrderDetail);
-            output.regions = regionEntities.map(mapRegion);
-            output.shippers = shipperEntities.map(mapShipper);
-            output.suppliers = supplierEntities.map(mapSupplier);
-            output.territories = territoryEntities.map(mapTerritory);
+            const result = {};
+            result.categories = categoryEntities.map(mapCategory);
+            result.products = productEntities.map(mapProduct);
+            result.customers = customerEntities.map(mapCustomer);
+            result.employees = employeeEntities.map(mapEmployee);
+            result.orders = orderEntities.map(mapOrder);
+            result.orderDetails = orderDetailEntities.map(mapOrderDetail);
+            result.regions = regionEntities.map(mapRegion);
+            result.shippers = shipperEntities.map(mapShipper);
+            result.suppliers = supplierEntities.map(mapSupplier);
+            result.territories = territoryEntities.map(mapTerritory);
 
+            return result;
+        }).then((r) => {
+            const output = filterResult(r);
             console.log(JSON.stringify(output, null, 2));
         });
     }
@@ -257,4 +248,36 @@ function mapTerritory(t) {
         description: t.TerritoryDescription.trim(),
         regionId: t.RegionID,
     };
+}
+
+function filterResult(result)
+{
+    const output = {
+        categories: [],
+        products: [],
+        customers: [],
+        //employees: [],
+        orders: [],
+        orderDetails: [],
+        //regions: [],
+        //shippers: [],
+        //suppliers: [],
+        //territories: [],
+    };
+  
+    output.orders = result.orders.filter(o => o.orderId < 10252);
+    
+    const orderIds = output.orders.map(o => o.orderId);
+    output.orderDetails = result.orderDetails.filter(o => orderIds.some(id => id == o.orderId));
+    
+    const productIds = output.orderDetails.map(d => d.productId);
+    output.products = result.products.filter(p => productIds.some(id => id == p.productId));
+
+    const categoryIds = output.products.map(p => p.categoryId);
+    output.categories = result.categories.filter(c => categoryIds.some(id => id == c.categoryId));
+
+    const customerIds = output.orders.map(o => o.customerId);
+    output.customers = result.customers.filter(c => customerIds.some(id => id == c.customerId));
+
+    return output;
 }
