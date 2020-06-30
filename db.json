@@ -112,6 +112,45 @@
       "discontinued": false
     }
   ],
+  "customers": [
+    {
+      "customerId": "HANAR",
+      "companyName": "Hanari Carnes",
+      "contactName": "Mario Pontes",
+      "contactTitle": "Accounting Manager",
+      "address": "Rua do Paço, 67",
+      "city": "Rio de Janeiro",
+      "postalCode": "05454-876",
+      "country": "Brazil",
+      "phone": "(21) 555-0091",
+      "region": "RJ",
+      "fax": "(21) 555-8765"
+    },
+    {
+      "customerId": "TOMSP",
+      "companyName": "Toms Spezialitäten",
+      "contactName": "Karin Josephs",
+      "contactTitle": "Marketing Manager",
+      "address": "Luisenstr. 48",
+      "city": "Münster",
+      "postalCode": "44087",
+      "country": "Germany",
+      "phone": "0251-031259",
+      "fax": "0251-035695"
+    },
+    {
+      "customerId": "VINET",
+      "companyName": "Vins et alcools Chevalier",
+      "contactName": "Paul Henriot",
+      "contactTitle": "Accounting Manager",
+      "address": "59 rue de l'Abbaye",
+      "city": "Reims",
+      "postalCode": "51100",
+      "country": "France",
+      "phone": "26.47.15.10",
+      "fax": "26.47.15.11"
+    }
+  ],
   "orders": [
     {
       "orderId": 10248,
@@ -216,96 +255,6 @@
       "unitPrice": "16.8000",
       "quantity": 15,
       "discount": 0.15
-    }
-  ],
-  "suppliers": [
-    {
-      "supplierId": 2,
-      "companyName": "New Orleans Cajun Delights",
-      "contactName": "Shelley Burke",
-      "contactTitle": "Order Administrator",
-      "address": "P.O. Box 78934",
-      "city": "New Orleans",
-      "PostalCode": "70117",
-      "Country": "USA",
-      "Phone": "(100) 555-4822",
-      "region": "LA",
-      "homePage": "#CAJUN.HTM#"
-    },
-    {
-      "supplierId": 5,
-      "companyName": "Cooperativa de Quesos 'Las Cabras'",
-      "contactName": "Antonio del Valle Saavedra",
-      "contactTitle": "Export Administrator",
-      "address": "Calle del Rosal 4",
-      "city": "Oviedo",
-      "PostalCode": "33007",
-      "Country": "Spain",
-      "Phone": "(98) 598 76 54",
-      "region": "Asturias"
-    },
-    {
-      "supplierId": 6,
-      "companyName": "Mayumi's",
-      "contactName": "Mayumi Ohno",
-      "contactTitle": "Marketing Representative",
-      "address": "92 Setsuko Chuo-ku",
-      "city": "Osaka",
-      "PostalCode": "545",
-      "Country": "Japan",
-      "Phone": "(06) 431-7877",
-      "homePage": "Mayumi's (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#"
-    },
-    {
-      "supplierId": 14,
-      "companyName": "Formaggi Fortini s.r.l.",
-      "contactName": "Elio Rossi",
-      "contactTitle": "Sales Representative",
-      "address": "Viale Dante, 75",
-      "city": "Ravenna",
-      "PostalCode": "48100",
-      "Country": "Italy",
-      "Phone": "(0544) 60323",
-      "fax": "(0544) 60603",
-      "homePage": "#FORMAGGI.HTM#"
-    },
-    {
-      "supplierId": 19,
-      "companyName": "New England Seafood Cannery",
-      "contactName": "Robb Merchant",
-      "contactTitle": "Wholesale Account Agent",
-      "address": "Order Processing Dept. 2100 Paul Revere Blvd.",
-      "city": "Boston",
-      "PostalCode": "02134",
-      "Country": "USA",
-      "Phone": "(617) 555-3267",
-      "region": "MA",
-      "fax": "(617) 555-3389"
-    },
-    {
-      "supplierId": 20,
-      "companyName": "Leka Trading",
-      "contactName": "Chandra Leka",
-      "contactTitle": "Owner",
-      "address": "471 Serangoon Loop, Suite #402",
-      "city": "Singapore",
-      "PostalCode": "0512",
-      "Country": "Singapore",
-      "Phone": "555-8787"
-    },
-    {
-      "supplierId": 24,
-      "companyName": "G'day, Mate",
-      "contactName": "Wendy Mackenzie",
-      "contactTitle": "Sales Representative",
-      "address": "170 Prince Edward Parade Hunter's Hill",
-      "city": "Sydney",
-      "PostalCode": "2042",
-      "Country": "Australia",
-      "Phone": "(02) 555-5914",
-      "region": "NSW",
-      "fax": "(02) 555-4873",
-      "homePage": "G'day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#"
     }
   ]
 }
