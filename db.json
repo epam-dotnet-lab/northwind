@@ -1,39 +1,332 @@
 {
-    "employees": [
-        {
-            "id" : 1,
-            "LastName" : "Davolio",
-            "FirstName" : "Nancy",
-            "Title" : "Sales Representative",
-            "TitleOfCourtesy" : "Ms.",
-            "BirthDate" : "12/08/1948",
-            "HireDate" : "05/01/1992",
-            "Address" : "507 - 20th Ave. E.Apt. 2A",
-            "City" : "Seattle",
-            "Region" : "WA",
-            "PostalCode" : "98122",
-            "Country" : "USA",
-            "HomePhone" : "(206) 555-9857",
-            "Extension" : "5467",
-            "Photo" : "",
-            "Notes" : "Education includes a BA in psychology from Colorado State University in 1970.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
-            "ReportsTo" : "2",
-            "PhotoPath" : "http://accweb/emmployees/davolio.bmp"
-        }
-    ],
-    "customers": [
-        {
-            "id": "ALFKI",
-            "companyName": "Alfreds Futterkiste",
-            "contactName": "Maria Anders",
-            "contactTitle": "Sales Representative",
-            "address": "Obere Str. 57",
-            "city": "Berlin",
-            "region": null,
-            "postalCode": "12209",
-            "country": "Germany",
-            "phone": "030-0074321",
-            "fax": "030-0076545"
-        }
-    ]
+  "categories": [
+    {
+      "categoryId": 2,
+      "categoryName": "Condiments",
+      "description": "Sweet and savory sauces, relishes, spreads, and seasonings"
+    },
+    {
+      "categoryId": 4,
+      "categoryName": "Dairy Products",
+      "description": "Cheeses"
+    },
+    {
+      "categoryId": 5,
+      "categoryName": "Grains/Cereals",
+      "description": "Breads, crackers, pasta, and cereal"
+    },
+    {
+      "categoryId": 7,
+      "categoryName": "Produce",
+      "description": "Dried fruit and bean curd"
+    },
+    {
+      "categoryId": 8,
+      "categoryName": "Seafood",
+      "description": "Seaweed and fish"
+    }
+  ],
+  "products": [
+    {
+      "productId": 11,
+      "productName": "Queso Cabrales",
+      "supplierId": 5,
+      "categoryId": 4,
+      "quantityPerUnit": "1 kg pkg.",
+      "unitPrice": "21.0000",
+      "unitsInStock": 22,
+      "unitsOnOrder": 30,
+      "reorderLevel": 30,
+      "discontinued": false
+    },
+    {
+      "productId": 14,
+      "productName": "Tofu",
+      "supplierId": 6,
+      "categoryId": 7,
+      "quantityPerUnit": "40 - 100 g pkgs.",
+      "unitPrice": "23.2500",
+      "unitsInStock": 35,
+      "unitsOnOrder": 0,
+      "reorderLevel": 0,
+      "discontinued": false
+    },
+    {
+      "productId": 41,
+      "productName": "Jack's New England Clam Chowder",
+      "supplierId": 19,
+      "categoryId": 8,
+      "quantityPerUnit": "12 - 12 oz cans",
+      "unitPrice": "9.6500",
+      "unitsInStock": 85,
+      "unitsOnOrder": 0,
+      "reorderLevel": 10,
+      "discontinued": false
+    },
+    {
+      "productId": 42,
+      "productName": "Singaporean Hokkien Fried Mee",
+      "supplierId": 20,
+      "categoryId": 5,
+      "quantityPerUnit": "32 - 1 kg pkgs.",
+      "unitPrice": "14.0000",
+      "unitsInStock": 26,
+      "unitsOnOrder": 0,
+      "reorderLevel": 0,
+      "discontinued": true
+    },
+    {
+      "productId": 51,
+      "productName": "Manjimup Dried Apples",
+      "supplierId": 24,
+      "categoryId": 7,
+      "quantityPerUnit": "50 - 300 g pkgs.",
+      "unitPrice": "53.0000",
+      "unitsInStock": 20,
+      "unitsOnOrder": 0,
+      "reorderLevel": 10,
+      "discontinued": false
+    },
+    {
+      "productId": 65,
+      "productName": "Louisiana Fiery Hot Pepper Sauce",
+      "supplierId": 2,
+      "categoryId": 2,
+      "quantityPerUnit": "32 - 8 oz bottles",
+      "unitPrice": "21.0500",
+      "unitsInStock": 76,
+      "unitsOnOrder": 0,
+      "reorderLevel": 0,
+      "discontinued": false
+    },
+    {
+      "productId": 72,
+      "productName": "Mozzarella di Giovanni",
+      "supplierId": 14,
+      "categoryId": 4,
+      "quantityPerUnit": "24 - 200 g pkgs.",
+      "unitPrice": "34.8000",
+      "unitsInStock": 14,
+      "unitsOnOrder": 0,
+      "reorderLevel": 0,
+      "discontinued": false
+    }
+  ],
+  "customers": [],
+  "employees": [],
+  "orders": [
+    {
+      "orderId": 10248,
+      "customerId": "VINET",
+      "employeeId": 5,
+      "orderDate": "1996-07-04T00:00:00",
+      "requiredDate": "1996-08-01T00:00:00",
+      "shippedDate": "1996-07-16T00:00:00",
+      "shipVia": 3,
+      "freight": "32.3800",
+      "shipName": "Vins et alcools Chevalier",
+      "shipAddress": "59 rue de l'Abbaye",
+      "shipCity": "Reims",
+      "shipPostalCode": "51100",
+      "shipCountry": "France"
+    },
+    {
+      "orderId": 10249,
+      "customerId": "TOMSP",
+      "employeeId": 6,
+      "orderDate": "1996-07-05T00:00:00",
+      "requiredDate": "1996-08-16T00:00:00",
+      "shippedDate": "1996-07-10T00:00:00",
+      "shipVia": 1,
+      "freight": "11.6100",
+      "shipName": "Toms Spezialitäten",
+      "shipAddress": "Luisenstr. 48",
+      "shipCity": "Münster",
+      "shipPostalCode": "44087",
+      "shipCountry": "Germany"
+    },
+    {
+      "orderId": 10250,
+      "customerId": "HANAR",
+      "employeeId": 4,
+      "orderDate": "1996-07-08T00:00:00",
+      "requiredDate": "1996-08-05T00:00:00",
+      "shippedDate": "1996-07-12T00:00:00",
+      "shipVia": 2,
+      "freight": "65.8300",
+      "shipName": "Hanari Carnes",
+      "shipAddress": "Rua do Paço, 67",
+      "shipCity": "Rio de Janeiro",
+      "shipPostalCode": "05454-876",
+      "shipCountry": "Brazil",
+      "shipRegion": "RJ"
+    }
+  ],
+  "orderDetails": [
+    {
+      "orderId": 10248,
+      "productId": 11,
+      "unitPrice": "14.0000",
+      "quantity": 12,
+      "discount": 0
+    },
+    {
+      "orderId": 10248,
+      "productId": 42,
+      "unitPrice": "9.8000",
+      "quantity": 10,
+      "discount": 0
+    },
+    {
+      "orderId": 10248,
+      "productId": 72,
+      "unitPrice": "34.8000",
+      "quantity": 5,
+      "discount": 0
+    },
+    {
+      "orderId": 10249,
+      "productId": 14,
+      "unitPrice": "18.6000",
+      "quantity": 9,
+      "discount": 0
+    },
+    {
+      "orderId": 10249,
+      "productId": 51,
+      "unitPrice": "42.4000",
+      "quantity": 40,
+      "discount": 0
+    },
+    {
+      "orderId": 10250,
+      "productId": 41,
+      "unitPrice": "7.7000",
+      "quantity": 10,
+      "discount": 0
+    },
+    {
+      "orderId": 10250,
+      "productId": 51,
+      "unitPrice": "42.4000",
+      "quantity": 35,
+      "discount": 0.15
+    },
+    {
+      "orderId": 10250,
+      "productId": 65,
+      "unitPrice": "16.8000",
+      "quantity": 15,
+      "discount": 0.15
+    }
+  ],
+  "regions": [],
+  "shippers": [
+    {
+      "shipperId": 1,
+      "companyName": "Speedy Express",
+      "phone": "(503) 555-9831"
+    },
+    {
+      "shipperId": 2,
+      "companyName": "United Package",
+      "phone": "(503) 555-3199"
+    },
+    {
+      "shipperId": 3,
+      "companyName": "Federal Shipping",
+      "phone": "(503) 555-9931"
+    }
+  ],
+  "suppliers": [
+    {
+      "supplierId": 2,
+      "companyName": "New Orleans Cajun Delights",
+      "contactName": "Shelley Burke",
+      "contactTitle": "Order Administrator",
+      "address": "P.O. Box 78934",
+      "city": "New Orleans",
+      "PostalCode": "70117",
+      "Country": "USA",
+      "Phone": "(100) 555-4822",
+      "region": "LA",
+      "homePage": "#CAJUN.HTM#"
+    },
+    {
+      "supplierId": 5,
+      "companyName": "Cooperativa de Quesos 'Las Cabras'",
+      "contactName": "Antonio del Valle Saavedra",
+      "contactTitle": "Export Administrator",
+      "address": "Calle del Rosal 4",
+      "city": "Oviedo",
+      "PostalCode": "33007",
+      "Country": "Spain",
+      "Phone": "(98) 598 76 54",
+      "region": "Asturias"
+    },
+    {
+      "supplierId": 6,
+      "companyName": "Mayumi's",
+      "contactName": "Mayumi Ohno",
+      "contactTitle": "Marketing Representative",
+      "address": "92 Setsuko Chuo-ku",
+      "city": "Osaka",
+      "PostalCode": "545",
+      "Country": "Japan",
+      "Phone": "(06) 431-7877",
+      "homePage": "Mayumi's (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#"
+    },
+    {
+      "supplierId": 14,
+      "companyName": "Formaggi Fortini s.r.l.",
+      "contactName": "Elio Rossi",
+      "contactTitle": "Sales Representative",
+      "address": "Viale Dante, 75",
+      "city": "Ravenna",
+      "PostalCode": "48100",
+      "Country": "Italy",
+      "Phone": "(0544) 60323",
+      "fax": "(0544) 60603",
+      "homePage": "#FORMAGGI.HTM#"
+    },
+    {
+      "supplierId": 19,
+      "companyName": "New England Seafood Cannery",
+      "contactName": "Robb Merchant",
+      "contactTitle": "Wholesale Account Agent",
+      "address": "Order Processing Dept. 2100 Paul Revere Blvd.",
+      "city": "Boston",
+      "PostalCode": "02134",
+      "Country": "USA",
+      "Phone": "(617) 555-3267",
+      "region": "MA",
+      "fax": "(617) 555-3389"
+    },
+    {
+      "supplierId": 20,
+      "companyName": "Leka Trading",
+      "contactName": "Chandra Leka",
+      "contactTitle": "Owner",
+      "address": "471 Serangoon Loop, Suite #402",
+      "city": "Singapore",
+      "PostalCode": "0512",
+      "Country": "Singapore",
+      "Phone": "555-8787"
+    },
+    {
+      "supplierId": 24,
+      "companyName": "G'day, Mate",
+      "contactName": "Wendy Mackenzie",
+      "contactTitle": "Sales Representative",
+      "address": "170 Prince Edward Parade Hunter's Hill",
+      "city": "Sydney",
+      "PostalCode": "2042",
+      "Country": "Australia",
+      "Phone": "(02) 555-5914",
+      "region": "NSW",
+      "fax": "(02) 555-4873",
+      "homePage": "G'day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#"
+    }
+  ],
+  "territories": []
 }
